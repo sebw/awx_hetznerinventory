@@ -1,0 +1,22 @@
+# Minimal example. `HCLOUD_TOKEN` is exposed in environment.
+plugin: hcloud
+
+# Example with locations, types, groups and token
+plugin: hcloud
+token: FHZx2NgoNlgpOrPTy6eYRRp3WFvONo5d4BJNZOxboGdhWJsOh3WuLYueIviEYVtI
+locations:
+  - nbg1
+types:
+  - cx11
+
+# Group by a location with prefix e.g. "hcloud_location_nbg1"
+# and image_os_flavor without prefix and separator e.g. "ubuntu"
+# and status with prefix e.g. "server_status_running"
+plugin: hcloud
+keyed_groups:
+  - key: location
+    prefix: hcloud_location
+  - key: image_os_flavor
+    separator: ""
+  - key: status
+    prefix: server_status
