@@ -2,14 +2,14 @@
 # Do not store token in your git repo in clear! Just for example purpose
 plugin: hcloud
 token: qamQ47w4VYFc58PIEQKoA76c5uDgJMJmI6CO0cSahJU1Yb5MlOIrlChlhCJNBOWw
-locations:
-  - nbg1
-types:
-  - cx11
-keyed_groups:
-  - key: location
-    prefix: hcloud_location
-  - key: image_os_flavor
-    separator: ""
-  - key: status
-    prefix: server_status
+#locations:
+#  - nbg1
+#types:
+#  - cx11
+#keyed_groups:
+#  - key: location
+#    prefix: hcloud_location
+#  - key: image_os_flavor
+#    separator: ""
+#  - key: status
+#    prefix: server_status
